@@ -29,8 +29,13 @@ var usuarioSchema = new Schema({
     role: {
         type: String,
         require: true,
-        default: 'USER:ROLE',
+        default: 'USER_ROLE',
         enum: rolesValidos
+    },
+    google: {
+        type: Boolean,
+        required: true,
+        default: false
     }
 });
 
